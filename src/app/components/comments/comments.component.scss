@@ -1,0 +1,9 @@
+a:not([href]):not([tabindex]) {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #111821;
+}
+
+.full-width {
+  width: 100%;
+}

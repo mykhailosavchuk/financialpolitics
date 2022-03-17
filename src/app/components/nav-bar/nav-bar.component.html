@@ -1,0 +1,46 @@
+<mat-toolbar class="nav-bar mat-elevation-z">
+  <button style="font-family:Verdana, Geneva, Tahoma, sans-serif;" mat-button [routerLink]="['/']">Financial Politics</button>
+  <button style="font-family:Verdana, Geneva, Tahoma, sans-serif;" mat-button [routerLink]="['/aboutus']">About</button>
+
+
+  <ng-container *ngIf="appUser">
+    <button
+      mat-button
+      [routerLinkActive]="['link-active']"
+      [routerLink]="['/addpost']"
+    >
+      Add Post
+    </button>
+  </ng-container>
+  <span class="spacer"></span>
+
+  <div class="navimg-parent">
+    <img
+      class="navimg"
+      mat-card-image
+      src="../../../assets/FinancialPoliticsnav.png"
+    />
+  </div>
+
+
+  <!-- <button mat-button>
+    <a
+      href="https://github.com/AnkitSharma-007/newsging-app-with-Angular-CloudFirestore"
+      target="_blank"
+      ><i class="fab fa-github" aria-hidden="true"></i> Source Code</a
+    >
+  </button> -->
+  <!-- <ng-template #anonymousUser>
+    <button mat-button (click)="login()">Login with Google</button>
+  </ng-template>
+  <ng-container *ngIf="appUser; else anonymousUser">
+    <img mat-card-avatar class="user-avatar" src="{{ appUser.photoURL }}" />
+    <button mat-button [matMenuTriggerFor]="menu">
+      {{ appUser.name | titlecase }}<mat-icon>arrow_drop_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+  </ng-container> -->
+
+</mat-toolbar>

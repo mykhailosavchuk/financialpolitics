@@ -1,0 +1,63 @@
+
+<ng-container *ngIf="postData$ | async as postData; else loader">
+  <mat-card class="mt-3 p-4 mat-elevation-z2 bg-white">
+
+    <!-- ATTEMPT AD SENSE -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3263802785071239"
+          crossorigin="anonymous"></script>
+      <!-- Top Banner 1 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-3263802785071239"
+          data-ad-slot="8015772578"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      <!-- FINISH ATTEMPT AD SENSE-->
+
+<mat-card-title>
+
+      <h1 class="my-2 display-4">{{ postData?.title }}</h1></mat-card-title>
+
+      <!-- ATTEMPT AD SENSE -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3263802785071239"
+          crossorigin="anonymous"></script>
+      <!-- Top Banner 1 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-3263802785071239"
+          data-ad-slot="8015772578"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      <!-- FINISH ATTEMPT AD SENSE-->
+
+
+    <mat-card-subtitle class="my-4">
+      <i class="fas fa-calendar" aria-hidden="true"></i>
+      {{ postData?.createdDate | date: "longDate" }}
+      <i class="fas fa-user ml-2" aria-hidden="true"></i>
+      {{ postData?.author | titlecase }}
+    </mat-card-subtitle>
+    <mat-divider></mat-divider>
+    <mat-card-content class="py-3 align-items-center align-content-center">
+      <div [innerHTML]="postData?.content"></div>
+      <h5><br><br>Page Tags</h5>
+      <div [innerHTML]="postData?.tags"></div>
+      <p> </p>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
+<ng-template #loader>
+  <div class="d-flex justify-content-center">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>
+<app-social-share></app-social-share>
+<mat-divider></mat-divider>
+<app-comments [newsId]="postId"></app-comments>
+<app-scroller></app-scroller>

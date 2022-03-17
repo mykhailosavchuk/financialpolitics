@@ -1,0 +1,55 @@
+.fa-twitter-square {
+  color: #55acee;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-linkedin-square {
+  color: #0976b4;
+}
+
+.fa-github-square {
+  color: #333;
+}
+
+.fab {
+  font-size: 3em;
+  margin: 0 5px;
+}
+
+.mat-card-avatar {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  padding: 5px;
+}
+
+.text-center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block;
+  width: 92% !important;
+  height: auto !important;
+  margin-top: 20px;
+  margin-bottom: auto;
+  padding: 0px !important;
+  box-shadow: 0px 0px 0px #000;
+  -moz-box-shadow: 0px 0px 0px #000;
+  -webkit-box-shadow: 0px 0px 0px #000;
+  max-height: 100% !important;
+}
+
+.mat-divider-horizontal {
+  // margin-top: 10px;
+  display: inline-block;
+  position: sticky !important;
+}
+
+h5 {
+  font-size: 1.3em;
+  display: inline-block;
+  position: relative !important;
+  margin-top: 16px;
+}

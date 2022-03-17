@@ -1,0 +1,107 @@
+h1 {
+  font-size: 2.0rem !important;
+}
+
+
+.mat-card-subtitle, .mat-card-content {
+  font-size: 16px;
+}
+
+// img {
+//   // max-width: 100%;
+//   float: right; //# FIX make more specific to news images
+//   // height: auto;
+//   display: block;
+//   max-width:22%;
+//   max-height:12%;
+//   min-width: 15%;
+//   min-height: 15%;
+
+//   width: 20%;
+//   height: auto;
+//   margin-left: 1%;
+//   box-shadow: 0px 0px 30px #000;
+//   -moz-box-shadow: 0px 0px 30px #000;
+//   -webkit-box-shadow: 0px 0px 30px #000;
+// }
+
+
+@media only screen and (max-width: 800px) {
+  img {
+    max-width: 200px;
+    // max-height: 20px;
+
+    display: block;
+    float: center;
+    align-self: auto;
+    // margin-left: 30px !important;
+    max-height: 240px;
+    box-shadow: 0px 0px 30px #000;
+    -moz-box-shadow: 0px 0px 30px #000;
+    -webkit-box-shadow: 0px 0px 30px #000;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 8%;
+    margin-top: 8%;
+  }
+
+  table {
+    table-layout:fixed;
+    width: 105%;
+    // margin-right: 20%;
+}
+th {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  padding: 0px;
+  font-size: 65%;
+}
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  padding: 0px;
+  font-size: 65%;
+}
+    /* horizontal scrollbar for tables if mobile screen */
+    .tablemobile {
+      overflow-x: auto;
+      display: block;
+  }
+
+
+  // td {
+  //   width:0.1%;
+  //   white-space: nowrap;
+  //   }
+
+}
+
+
+@media only screen and (min-width: 800px) {
+  img {
+    max-width: 340px;
+    max-height: 138px !important;
+
+    display: block;
+    float: right;
+    margin-left: 30px !important;
+    max-height: 240px;
+    box-shadow: 0px 0px 30px #000;
+    -moz-box-shadow: 0px 0px 30px #000;
+    -webkit-box-shadow: 0px 0px 30px #000;
+    // margin-bottom: 2%;
+  }
+
+}
+
+h3 {
+  margin-top: 1.6%;
+}
+
+
+a {
+  color: #111821;
+}

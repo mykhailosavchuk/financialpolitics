@@ -1,0 +1,6 @@
+AIzaSyBr6O96a1lKF1V1Z1Wf8TlZG8eqqcw9zlY
+
+> export GCS_DEVELOPER_KEY=__your_dev_api_key__
+> export GCS_CX=__your_project_cx__
+>
+> gimages search -q puppies
